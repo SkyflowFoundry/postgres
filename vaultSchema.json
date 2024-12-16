@@ -1,0 +1,119 @@
+{
+    "schemas": [
+        {
+            "name": "pii",
+            "parentSchemaProperties": null,
+            "fields": [
+                {
+                    "name": "skyflow_id",
+                    "datatype": "DT_STRING",
+                    "isArray": false,
+                    "tags": [
+                        {
+                            "name": "skyflow.options.default_dlp_policy",
+                            "values": [
+                                "PLAIN_TEXT"
+                            ]
+                        },
+                        {
+                            "name": "skyflow.options.operation",
+                            "values": [
+                                "ALL_OP"
+                            ]
+                        },
+                        {
+                            "name": "skyflow.options.sensitivity",
+                            "values": [
+                                "LOW"
+                            ]
+                        },
+                        {
+                            "name": "skyflow.options.data_type",
+                            "values": [
+                                "skyflow.SkyflowID"
+                            ]
+                        },
+                        {
+                            "name": "skyflow.options.description",
+                            "values": [
+                                "Skyflow defined Primary Key"
+                            ]
+                        },
+                        {
+                            "name": "skyflow.options.display_name",
+                            "values": [
+                                "Skyflow ID"
+                            ]
+                        }
+                    ],
+                    "properties": null,
+                    "index": 0,
+                    "ID": ""
+                },
+                {
+                    "name": "pii",
+                    "datatype": "DT_STRING",
+                    "isArray": false,
+                    "tags": [
+                        {
+                            "name": "skyflow.options.default_dlp_policy",
+                            "values": [
+                                "REDACT"
+                            ]
+                        },
+                        {
+                            "name": "skyflow.options.operation",
+                            "values": [
+                                "ALL_OP"
+                            ]
+                        },
+                        {
+                            "name": "skyflow.options.default_token_policy",
+                            "values": [
+                                "DETERMINISTIC_FPT"
+                            ]
+                        },
+                        {
+                            "name": "skyflow.options.index",
+                            "values": [
+                                "true"
+                            ]
+                        },
+                        {
+                            "name": "skyflow.options.description",
+                            "values": [
+                                "String"
+                            ]
+                        },
+                        {
+                            "name": "skyflow.options.display_name",
+                            "values": [
+                                "pii"
+                            ]
+                        }
+                    ],
+                    "properties": null,
+                    "index": 0,
+                    "ID": ""
+                }
+            ],
+            "childrenSchemas": [],
+            "schemaTags": [
+                {
+                    "name": "skyflow.options.description",
+                    "values": [
+                        "Scratch Table is a minimal table in a vault."
+                    ]
+                },
+                {
+                    "name": "skyflow.options.display_name",
+                    "values": [
+                        "ScratchTable"
+                    ]
+                }
+            ],
+            "properties": null
+        }
+    ],
+    "tags": []
+}
