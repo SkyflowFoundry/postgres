@@ -130,8 +130,7 @@ BEGIN
         'detokenizationParameters', 
         jsonb_build_array(
             jsonb_build_object(
-                'token', token_value,
-                'redaction', 'PLAIN_TEXT'
+                'token', token_value
             )
         )
     );
